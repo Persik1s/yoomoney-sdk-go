@@ -12,7 +12,7 @@ import (
 )
 
 const (
-	_OperationHistoryUrl = "https://yoomoney.ru/api/operation-history"
+	_operationHistoryUrl = "https://yoomoney.ru/api/operation-history"
 )
 
 const (
@@ -81,7 +81,7 @@ func (y *YooAccount) GetOperations(data OperationRequest) (OperationRespone, err
 	}
 	fmt.Println(valueEncode)
 
-	request, err := http.NewRequest(http.MethodPost, _OperationHistoryUrl, bytes.NewReader([]byte(valueEncode)))
+	request, err := http.NewRequest(http.MethodPost, _operationHistoryUrl, bytes.NewReader([]byte(valueEncode)))
 
 	request.Header.Set("Content-Length", strconv.Itoa(len(valueEncode)))
 	request.Header.Set("Content-Type", "application/x-www-form-urlencoded")

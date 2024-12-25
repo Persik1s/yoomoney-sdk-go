@@ -6,7 +6,7 @@ import (
 )
 
 const (
-	_QuickPayUrl = "https://yoomoney.ru/quickpay/confirm.xml?"
+	_quickPayUrl = "https://yoomoney.ru/quickpay/confirm.xml?"
 )
 
 const (
@@ -39,5 +39,5 @@ func (y *YooQuickPay) GenerateQuickPay(form QuickPayForm) (string, error) {
 	if err != nil {
 		return "", err
 	}
-	return fmt.Sprintf("%s%s", _QuickPayUrl, value.Encode()), err
+	return fmt.Sprintf("%s%s", _quickPayUrl, value.Encode()), err
 }

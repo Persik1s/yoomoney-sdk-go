@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"sdk/yoomoney/operation"
+	"github.com/Persik1s/yoomoney-sdk-go/yoomoney/operation"
 )
 
 func main() {

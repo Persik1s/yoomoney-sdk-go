@@ -1,6 +1,6 @@
 package account
 
-import "sdk/yoomoney"
+import "github.com/Persik1s/yoomoney-sdk-go/yoomoney"
 
 type YooAccount struct {
 	Client *yoomoney.Client

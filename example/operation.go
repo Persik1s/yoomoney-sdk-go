@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"sdk/yoomoney"
-	"sdk/yoomoney/account"
+	"github.com/Persik1s/yoomoney-sdk-go/yoomoney"
+	"github.com/Persik1s/yoomoney-sdk-go/yoomoney/account"
 )
 
 func main() {

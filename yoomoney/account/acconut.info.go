@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	_AccountInfoUrl = "https://yoomoney.ru/api/account-info"
+	_accountInfoUrl = "https://yoomoney.ru/api/account-info"
 )
 
 type Account struct {
@@ -19,7 +19,7 @@ type Account struct {
 }
 
 func (a *YooAccount) Info() (Account, error) {
-	request, err := http.NewRequest(http.MethodPost, _AccountInfoUrl, nil)
+	request, err := http.NewRequest(http.MethodPost, _accountInfoUrl, nil)
 	if err != nil {
 		return Account{}, err
 	}
